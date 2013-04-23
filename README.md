@@ -1,7 +1,7 @@
 random-ascii v0.0.2
 ===================
 
-Generate random stirngs of ascii characters.
+Generate random strings of ascii characters.
 
 Usage
 -----
