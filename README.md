@@ -1,4 +1,4 @@
-random-ascii v0.0.1
+random-ascii v0.0.2
 ===================
 
 Generate random stirngs of ascii characters.
@@ -11,8 +11,18 @@ Usage
 Later,
 
     var ascii = require('random-ascii');
+    var callback = function (error, s) { console.log(s) };
 
-    console.log(ascii());
+    ascii.lowercase(6, callback);
+    ascii.uppercase(6, callback);
+    ascii.digits(6, callback);
+
+    ascii.generate({
+      length: 12,
+      range: 3,
+      offset: 123,
+      callback: callback
+    });
 
 Contact
 -------
