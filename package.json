@@ -1,6 +1,6 @@
 {
   "name": "random-ascii",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate strings of random ASCII characters",
   "main": "index.js",
   "scripts": {

@@ -1,4 +1,4 @@
-random-ascii v0.1.0
+random-ascii v0.1.1
 ===================
 
 Generate random strings of ascii characters.
