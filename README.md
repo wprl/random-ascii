@@ -1,7 +1,7 @@
 random-ascii v0.1.0
 ===================
 
-Generate random stirngs of ascii characters.
+Generate random strings of ascii characters.
 
 Usage
 -----
@@ -28,6 +28,7 @@ Contact
 -------
 
 william@kun.io
+
 http://kun.io
 
 © 2013 William Riley-Land
