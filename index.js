@@ -1,9 +1,7 @@
-// Dpendencies
-// -----------
+// __Dependencies__
 var crypto = require('crypto');
 
-// Private Members
-// ---------------
+// __Private Members__
 
 // A function that performs the actual generation of random strings
 function randomAscii (options) {
@@ -23,8 +21,7 @@ function randomAscii (options) {
   });
 }
 
-// Module Definition
-// -----------------
+// __Module Definition__
 module.exports = {
   lowercase: function (length, callback) {
     if (typeof callback !== 'function') throw new Error('Must supply callback');
@@ -62,8 +59,10 @@ module.exports = {
       range: 10
     });
   },
-  generate: function (options) {
+  generate: function (options, callback) {
     options || (options = {});
+
+    options.callback = options.callback || callback;
 
     if (typeof options.callback !== 'function') throw new Error('Must supply callback');
     if (!options.length) return callback(new Error('Must supply length.'));
